@@ -1,0 +1,103 @@
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1vw;
+    letter-spacing: .1vw;
+}
+
+.activeCard, .blurredCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 40vw;
+    padding: 0 1vw 1vw 1vw;
+    height: 50vh;
+    margin: 1vw;
+    border: .2vw solid black;
+    border-radius: 1vw;
+    background-color: #F0F0F0;
+}
+
+.activeCard{
+    z-index: 2;
+    padding: 1vw;
+}
+
+.activeCard h3{
+    font-size: 1.3vw;
+    margin-left: 1%;
+}
+
+.activeCard p{
+    padding: 0 1vw;
+    font-size: 1vw;
+    margin-left: 1%;
+    overflow: scroll;
+}
+
+.cardLine{
+    background-color: #1D1B1B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 1%;
+    margin-bottom: 1%;
+}
+
+.blurredCard {
+    user-select: none;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    top: 18%;  /* Adjusts the card position down */
+    left: 32%; /* Adjusts the card position to the right */
+    filter: blur(.1vw); /* Apply a blur effect */
+}
+
+.blurredCard:hover{
+    cursor: pointer;
+}
+
+.cardButtons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 74vw;
+    top: 30vh;
+    height: 20vh;
+}
+
+.cardButtons button{
+    width: 2vw;
+    height: 2vw;
+    border: none;
+    border-radius: 1vw;
+    background-color: #1d1b1b00;
+    border: .2vw solid #1D1B1B;
+    color: white;
+    font-size: 1vw;
+}
+
+.cardButtons button:hover{
+    background-color: #1D1B1B;
+    cursor:pointer;
+}
+
+.cardButtons .activeButton{
+    background-color: #57dc74;
+    color: black;
+    text-decoration: underline;
+}

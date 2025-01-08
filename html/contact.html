@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV-Portal</title>
+    <link rel="icon" href="../ChasLogo.png" type="image">
+
+    <!-- Font imported from google fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+    </style>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header id="header" class="header"></header>
+
+    <main>
+        <h1>Contact Me</h1>
+        <p>If you would like to get in touch with me, please fill out the form below:</p>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="easterEgg" id="easterEgg"></div>
+        <p>&copy; 2024 CV-Portal</p>
+        <div></div> <!-- Empty div for style -->
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/DOM_Handler.js"></script>
+    <script src="../js/easterEggs.js"></script>
+</body>
+
+</html>

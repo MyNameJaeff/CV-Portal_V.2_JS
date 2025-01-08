@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV-Portal</title>
+    <link rel="icon" href="../ChasLogo.png" type="image">
+
+    <!-- Font imported from google fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+    </style>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+
+<body>
+    <header id="header" class="header"></header>
+
+    <main>
+        <div class="cards">
+            <div class="activeCard" id="activeCard">
+                <h3>About Me</h3>
+                <div class="cardLine"></div>
+                <p> I am a 20-year-old student with ambitions to become a versatile full-stack developer. Rather than
+                    specializing in a single area, I believe that mastering multiple programming languages deepens one's
+                    overall understanding and adaptability.
+                    <br><br>
+                    My goal is to continuously improve my coding efficiency while maintaining high-quality standards, as
+                    both speed and quality are crucial in delivering exceptional products.
+                </p>
+            </div>
+            <div class="blurredCard" id="skillsCard" onclick="showCard('skills', this)">
+                <h3>Contact Me</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis possimus ad accusamus explicabo
+                    sunt impedit, dolores voluptates aliquam quia quae! Necessitatibus, laboriosam eius saepe earum
+                    minima sunt odio doloremque eveniet. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit maiores voluptates alias sequi illo iusto incidunt, ratione odit aperiam harum
+                    inventore soluta, ad esse, at nostrum nulla nemo aliquid veniam? Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Nostrum consectetur aut eum doloribus. Delectus labore vel, soluta, ab
+                    totam, nulla incidunt molestias placeat earum amet rerum? Odio alias nobis a. Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Odio facilis minus sint quibusdam aut earum voluptas suscipit
+                    accusamus accusantium eligendi inventore quam dolorem rem sapiente excepturi, eveniet rerum.
+                    Voluptas, ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, et. Velit nemo
+                    quas enim, non vitae ullam dignissimos quae nam! Quae accusantium inventore nam modi porro
+                    temporibus illo vero et.
+                </p>
+            </div>
+        </div>
+        <div class="cardButtons">
+            <button class="activeButton" id="aboutButton">1</button>
+            <button id="skillsButton">2</button>
+            <button id="qualificationsButton">3</button>
+        </div>
+    </main>
+    <footer>
+        <div class="easterEgg" id="easterEgg"></div>
+        <p>&copy; 2024 CV-Portal</p>
+        <div></div> <!-- Empty div for style -->
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/DOM_Handler.js"></script>
+    <script src="../js/easterEggs.js"></script>
+    <script src="../js/handleCards.js"></script>
+</body>
+
+</html>
