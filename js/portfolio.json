@@ -1,0 +1,96 @@
+{
+    "projects": [
+        {
+            "name": "Personal Portfolio",
+            "text": "This the first portfolio i have ever created. I created this portfolio to showcase my projects and to give you some information about myself, including contact information for questions surrounding my works. I used the framework React to create the website, and designed it in Figma. The code isn't beautiful, but it works.",
+            "number": 1,
+            "link": "https://github.com/MyNameJaeff/Personal-Portfolio",
+            "images": [
+                "personalportfolio.png"
+            ]
+        },
+        {
+            "name": "Information display screen ",
+            "text": "This was a task given to me by my teacher, where the task was to create a website to be shown on a screen outside of his office where it was supposed to show his contact information, weather, date, a QR code and an availability status. I was tasked to use React as the main framework for the website, and i also used HTML, CSS and JavaScript to create the website.",
+            "number": 2,
+            "link": "https://github.com/MyNameJaeff/Information_display_screen",
+            "images": [
+                "hemtenta4.png",
+                "hemtenta4_2.png",
+                "hemtenta4_3.png"
+            ]
+        },
+        {
+            "name": "Schoolsoft Redesign",
+            "text": "In this project we worked as a group of 4, where our task was to pick a website we disliked the design of and redesign it. We chose Schoolsoft, a website used by many schools in Sweden. We wanted to make it more modern and user friendly. We also wanted to make it more accessible for people with disabilities. We used HTML, CSS and JavaScript to create the website. We also used the framework Bootstrap to make it responsive. I was the one to lead the project, and i also created three of the pages: 'Lunch', 'Schema' and 'Närvaro'.",
+            "number": 3,
+            "link": "https://github.com/MyNameJaeff/Schoolsoft-redesign",
+            "images": [
+                "schoolsoftRedesign.png",
+                "schoolsoftRedesign2.png",
+                "schoolsoftRedesign3.png"
+            ]
+        },
+        {
+            "name": "Javascript exercise",
+            "text": "This was a task to create a website without any design, but to exclusively use JavaScript to create data to send to the console. It's nothing special, but it was a good way to practice JavaScript.",
+            "number": 4,
+            "link": "https://github.com/MyNameJaeff/Javascript-exercise",
+            "images": [
+                "javascriptOvning.png"
+            ]
+        },
+        {
+            "name": "RockPaperScissors",
+            "text": "This was a task to create a website where you could play Rock Paper Scissors against the computer. I used HTML, CSS and JavaScript to create the website. I made the code as simple as i could at the time, and it works as intended.",
+            "number": 5,
+            "link": "https://github.com/MyNameJaeff/RockPaperScissors",
+            "images": [
+                "rockPaperScissors.png"
+            ]
+        },
+        {
+            "name": "Blog Website",
+            "text": "This project was about creating a website using PHP where a user could create an account and write blog posts, which would then be shown on the website. We we're tasked to take the inputed data and store it in a database, and then retrieve it and show it on the website. It was also able to take in an image input and store the image as a link in the database, and then show the image on the website. I made it possible to access a users profile where all of their posts showed up by sorting the posts by the users ID.",
+            "number": 6,
+            "link": "https://github.com/MyNameJaeff/Blog-website",
+            "images": [
+                "blogHemsida.png",
+                "blogHemsida2.png"
+            ]
+        },
+        {
+            "name": "PHP Calendar",
+            "text": "A project about creating a calendar with PHP to show 'namnsdag', week number, date, day and if it's sunday. It was also required to have a side where the user could pick a date and it would show how many days left untill it was friday. I used PHP to create the calendar and the functions, and HTML and CSS to design the website. Some bootstrap was also used to make it responsive and style it a bit.",
+            "number": 7,
+            "link": "https://github.com/MyNameJaeff/phpCalendar",
+            "images": [
+                "phpCalendar.png",
+                "phpCalendar2.png"
+            ]
+        },
+        {
+            "name": "Api Exercise",
+            "text": "This was a project to learn and familiarize myself with API's. I used the SL API to create a website where you could see the departures for busses and trains at a selected station, where the default was trains from 'Flemmingsberg station' and busses from 'Huddinge Sjukhus'. I used HTML, CSS and JavaScript to create the website, and used three diffrent api's to get the data i needed. I also used Bootstrap to make it responsive and style it a bit.",
+            "number": 8,
+            "link": "https://github.com/MyNameJaeff/Api-Exercise",
+            "images": [
+                "slApiSak.png",
+                "slApiSak2.png"
+            ]
+        },
+        {
+            "name": "Tourist Website",
+            "text": "This was a project to create a website for a specific city to try and influence people to want to travel to said city by showing them images of things found in the city, the city's history and then it was also required to have a booking and contact page",
+            "number": 9,
+            "link": "https://github.com/MyNameJaeff/Tourist-website",
+            "images": [
+                "turistHemsida.png",
+                "turistHemsida2.png",
+                "turistHemsida3.png",
+                "turistHemsida4.png",
+                "turistHemsida5.png"
+            ]
+        }
+    ]
+}

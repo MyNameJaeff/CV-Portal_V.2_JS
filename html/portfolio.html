@@ -14,6 +14,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
 </head>
 
 <body>
@@ -22,10 +23,7 @@
     <main>
         <h1>My Portfolio</h1>
         <p>Here are some of the projects I have worked on:</p>
-        <ul>
-            <li><a href="https://www.example.com/project1">Project 1</a></li>
-            <li><a href="https://www.example.com/project2">Project 2</a></li>
-            <li><a href="https://www.example.com/project3">Project 3</a></li>
+        <ul class="projects" id="projects">
         </ul>
     </main>
 
@@ -35,9 +33,30 @@
         <div></div> <!-- Empty div for style -->
     </footer>
 
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Info box</h2>
+            <div class="content">
+                <p>This is done totally without JavaScript. Just HTML and CSS.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup2" class="overlay light">
+        <a class="cancel" href="#"></a>
+        <div class="popup">
+            <h2>What the what?</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>Click outside the popup to close.</p>
+            </div>
+        </div>
+    </div>
+
     <script src="../js/navbar.js"></script>
     <script src="../js/DOM_Handler.js"></script>
     <script src="../js/easterEggs.js"></script>
+    <script src="../js/portfolio_Cards.js"></script>
 </body>
 
 </html>
