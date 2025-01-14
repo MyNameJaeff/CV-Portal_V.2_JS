@@ -11,7 +11,7 @@
         },
         {
             "name": "Information display screen ",
-            "text": "This was a task given to me by my teacher, where the task was to create a website to be shown on a screen outside of his office where it was supposed to show his contact information, weather, date, a QR code and an availability status. I was tasked to use React as the main framework for the website, and i also used HTML, CSS and JavaScript to create the website.",
+            "text": "This was a task given to me by my teacher, where the task was to create a website to be shown on a screen outside of his office where it was supposed to show his contact information, weather, date, a QR code and an availability status. I was also tasked to create an admin page for managing booked dates and availability .I was tasked to use React as the main framework for the website, and i also used HTML, CSS and JavaScript to create the website.",
             "number": 2,
             "link": "https://github.com/MyNameJaeff/Information_display_screen",
             "images": [
@@ -32,21 +32,21 @@
             ]
         },
         {
-            "name": "Javascript exercise",
-            "text": "This was a task to create a website without any design, but to exclusively use JavaScript to create data to send to the console. It's nothing special, but it was a good way to practice JavaScript.",
+            "name": "Boozer",
+            "text": "This was a personal project that i made to warmup to react again. The project was about creating a website where you could create an inventory of your booze, where you then could see what you have and what you need to buy. I used React to create the website, and used HTML, CSS and JavaScript to design it. The website works by taking all the data, storing it as a JSON string in the local storage, and then retrieving it and copying it to the clipboard where the user then could use ChatGPT to create drinks using what the user already owns!",
             "number": 4,
-            "link": "https://github.com/MyNameJaeff/Javascript-exercise",
+            "link": "https://github.com/MyNameJaeff/Boozer",
             "images": [
-                "javascriptOvning.png"
+                "boozer.png"
             ]
         },
         {
-            "name": "RockPaperScissors",
-            "text": "This was a task to create a website where you could play Rock Paper Scissors against the computer. I used HTML, CSS and JavaScript to create the website. I made the code as simple as i could at the time, and it works as intended.",
+            "name": "",
+            "text": "",
             "number": 5,
-            "link": "https://github.com/MyNameJaeff/RockPaperScissors",
+            "link": "",
             "images": [
-                "rockPaperScissors.png"
+                ""
             ]
         },
         {

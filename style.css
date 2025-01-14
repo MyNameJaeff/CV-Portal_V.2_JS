@@ -1,15 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html, body {
-    height: 100vh;
+    height: 100%;
     font-family: "JetBrains Mono", serif;
-    font-optical-sizing: auto;
     color: #ffffff;
-    background-color: #353131;
+    background-color: #353135;
+    background-image: url("");
+    background-size: cover;
 }
 
 body {
@@ -26,7 +26,7 @@ main {
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Centrerar allt innehåll i mitten horisontellt */
+    justify-content: space-between;
     bottom: 0;
     width: 100%;
     height: 3vh;
@@ -34,12 +34,12 @@ footer {
 
 footer p {
     font-size: 0.9vw;
-    text-align: center; /* För att se till att texten är centrerad */
+    text-align: center;
 }
 
 .navbarLine {
     background-color: #1D1B1B;
-    height: 8%;
+    height: 1vh;
 }
 
 .line1 {
@@ -53,15 +53,18 @@ footer p {
 }
 
 .header {
-    height: 8%;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 100%;
 }
 
 .navbar .navLinks {
@@ -82,7 +85,7 @@ footer p {
 .navLink a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 1vw;
+    font-size: 1.25vw;
     font-weight: 500;
     padding: 0.2vw .4vw;
     border-radius: 5px;

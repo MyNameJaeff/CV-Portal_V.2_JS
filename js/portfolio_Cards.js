@@ -1,26 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projectsContainer = document.getElementById('projects');
-    createPortfolioCards().then(projectsElements => {
-        for (const projectElement of projectsElements) {
-            projectsContainer.appendChild(projectElement);
-        }
-    }).catch(error => {
-        console.error('Error creating portfolio cards:', error);
-    });
+    createPortfolioCards()
+        .then(projectsElements => {
+            for (const projectElement of projectsElements) {
+                projectsContainer.appendChild(projectElement);
+            }
+        })
+        .catch(error => {
+            console.error('Error creating portfolio cards:', error);
+        });
 });
 
 const createPortfolioCards = () => {
     return new Promise((resolve, reject) => {
         const projectsElements = [];
 
-        // Fetch JSON data
         fetch('../js/portfolio.json')
-            .then(response => response.json())  // Parse JSON response
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
             .then(data => {
+                if (!Array.isArray(data.projects)) {
+                    throw new Error('Invalid or missing "projects" array in JSON.');
+                }
+
                 for (const project of data.projects) {
                     const card = document.createElement('div');
                     card.classList.add('card');
-                    const modalId = `popup-${project.number}`; // Unique modal id based on project id
+                    const modalId = `popup-${project.number}`;
+
                     card.innerHTML = `
                     <li>
                         <div class="projectText">
@@ -37,24 +48,36 @@ const createPortfolioCards = () => {
                     <div id="${modalId}" class="overlay">
                         <a class="cancel" href="#"></a>
                         <div class="popup">
-                            <a href="${project.link}" target="_blank">${project.name}&#128279;</a>
+                            <a href="${project.link}" target="_blank">${project.name} &#128279;</a>
                             <a class="close" href="#">&times;</a>
                             <div class="content">
                                 <p>${project.text}</p>
                                 <div class="modalImages">
-                                    <img src="../images/${project.images[1] ? project.images[1] : project.images[0]}" alt="${project.name}" class="modalImage">
                                 </div>
                             </div>
                         </div>
                     </div>
                     `;
+
+                    // Add all images to the modal
+                    const modalImagesContainer = card.querySelector('.modalImages');
+                    project.images.forEach(image => {
+                        const img = document.createElement('img');
+                        img.src = `../images/${image}`;
+                        img.alt = project.name;
+                        img.classList.add('modalImage'); // Optional: Add a class for styling
+                        modalImagesContainer.appendChild(img);
+                    });
+
+                    // Push the card element into the projectsElements array
                     projectsElements.push(card);
                 }
 
-                resolve(projectsElements);
+                resolve(projectsElements); // Resolve with created elements
             })
             .catch(error => {
-                reject(error);  // Reject the promise if there's an error
+                console.error('Error fetching or processing portfolio data:', error);
+                reject(error); // Reject the promise
             });
     });
 };

@@ -61,8 +61,8 @@ main{
     position: absolute;
     overflow: hidden;
     z-index: 1;
-    top: 18%;  /* Adjusts the card position down */
-    left: 32%; /* Adjusts the card position to the right */
+    top: 20vh;  /* Adjusts the card position down */
+    left: 30vw; /* Adjusts the card position to the right */
     filter: blur(.1vw); /* Apply a blur effect */
 }
 

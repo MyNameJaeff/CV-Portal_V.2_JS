@@ -4,32 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV-Portal</title>
-    <link rel="icon" href="../ChasLogo.png" type="image">
+    <title>John Doe - Programmer CV</title>
+    <link rel="icon" href="../ChasLogo.png" type="image/png">
 
-    <!-- Font imported from google fonts -->
+    <!-- Font imported from Google Fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
     </style>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/cv.css">
 </head>
 
 <body>
     <header id="header" class="header"></header>
 
     <main>
-        <h1>My CV</h1>
-        <p>My name is John Doe, and I am a web developer. I have been working in the field for over 10 years, and I have
-            experience with a wide range of technologies, including HTML, CSS, JavaScript, PHP, and more. I am
-            passionate about creating beautiful and functional websites that help my clients achieve their goals.</p>
+        <section class="name">
+            <h1>John Doe</h1>
+            <p>Full-Stack Web Developer</p>
+            <p>Email: john.doe@example.com | Phone: +1234567890 | Location: Stockholm, Sweden</p>
+        </section>    
+        
+        <section class="summary">
+            <h2>Summary</h2>
+            <p>
+                I am a full-stack web developer with over 10 years of experience in building and maintaining dynamic
+                websites and web applications. I am proficient in a variety of programming languages and frameworks,
+                including HTML, CSS, JavaScript, React, C#, PHP, and Python. I am passionate about creating clean, efficient,
+                and user-friendly solutions to meet business needs.
+            </p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> HTML, CSS, JavaScript, C#, PHP, Python</li>
+                <li><strong>Frameworks:</strong> React, Node.js, ASP.NET</li>
+                <li><strong>Version Control:</strong> Git, GitHub</li>
+                <li><strong>Databases:</strong> MySQL, MongoDB</li>
+                <li><strong>Tools:</strong> VS Code, Docker, Nginx</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <h3>Senior Web Developer</h3>
+                <p><strong>XYZ Tech Solutions</strong> - Stockholm, Sweden</p>
+                <p>July 2018 - Present</p>
+                <ul>
+                    <li>Developed and maintained dynamic, responsive websites using HTML, CSS, and JavaScript.</li>
+                    <li>Built React-based single-page applications (SPAs) for various clients, improving user engagement by 30%.</li>
+                    <li>Collaborated with backend developers to integrate APIs using PHP and C# (ASP.NET).</li>
+                    <li>Ensured code quality through the use of Git for version control and participated in code reviews.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Junior Web Developer</h3>
+                <p><strong>ABC Web Agency</strong> - Stockholm, Sweden</p>
+                <p>May 2015 - June 2018</p>
+                <ul>
+                    <li>Assisted in front-end development using HTML, CSS, and JavaScript for custom websites.</li>
+                    <li>Developed PHP-based content management systems (CMS) for small business clients.</li>
+                    <li>Collaborated with senior developers on various React.js projects to enhance front-end functionality.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="degree">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p><strong>Stockholm University</strong> - Stockholm, Sweden</p>
+                <p>Graduated: June 2015</p>
+                <ul>
+                    <li>Focused on software development, algorithms, and data structures.</li>
+                    <li>Completed projects using Python, C#, and JavaScript.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>Created a personal portfolio website using React.js, CSS, and Node.js for backend services.</p>
+            </div>
+
+            <div class="project">
+                <h3>E-commerce Web Application</h3>
+                <p>Built a full-stack e-commerce platform using React.js for the front-end, PHP for the backend, and MySQL for the database.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="easterEgg" id="easterEgg"></div>
         <p>&copy; 2024 CV-Portal</p>
-        <div></div> <!-- Empty div for style -->
+        <div></div><!-- For styling purposes! -->
     </footer>
 
     <script src="../js/navbar.js"></script>
