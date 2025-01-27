@@ -30,3 +30,19 @@ main .logoImage {
     height: 100%;
 }
 
+@media screen and (max-width: 768px) {
+    main h1 {
+        font-size: 6vw;
+    }
+
+    main h2 {
+        margin-top: 2vw;
+        font-size: 4vw;
+    }
+
+    main .logoImage {
+        height: 30vw;
+        width: 30vw;
+    }
+    
+}

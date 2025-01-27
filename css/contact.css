@@ -1,19 +1,18 @@
-main h1{
+main h1 {
     font-size: 2.5vw;
     margin-bottom: 1vh;
 }
 
-main p{
+main p {
     font-size: 1.2vw;
     margin-bottom: 2vh;
 }
 
-main .contactLinks{
+main .contactLinks {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
     width: 30vw;
     height: 30vh;
     display: flex;
@@ -23,33 +22,62 @@ main .contactLinks{
     margin-left: 2vw;
 }
 
-.contactLinks li{
+.contactLinks li {
     display: flex;
     align-items: center;
 }
 
-.contactLinks li a{
+.contactLinks li a {
     font-size: 1.2vw;
     color: white;
     margin-left: 1vw;
-    padding: 0 .5vw; 
+    padding: 0 0.5vw;
 }
 
-.contactLinks li a:hover{
+.contactLinks li a:hover {
     background-color: #575757;
 }
 
-li a.active{
+li a.active {
     color: #57dc74;
     text-decoration: underline;
 }
 
-li img{
+li img {
     width: 3vw;
     height: 100%;
     object-fit: cover;
 }
 
-.invert{
+.invert {
     filter: invert(1);
 }
+
+
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 1.8rem;
+    }
+
+    main p {
+        font-size: 0.9rem;
+    }
+
+    .contactLinks {
+        width: 50vw;
+        height: 20vh;
+    }
+
+    .contactLinks li a {
+        font-size: 1rem;
+    }
+
+    li img {
+        width: 7vw;
+    }
+    main .contactLinks {
+        margin-left: 1.5vw;
+        width: 100%;
+    }
+}
+

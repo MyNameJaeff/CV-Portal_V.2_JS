@@ -61,6 +61,7 @@ const createPortfolioCards = () => {
 
                     // Add all images to the modal
                     const modalImagesContainer = card.querySelector('.modalImages');
+                    // biome-ignore lint/complexity/noForEach: <explanation>
                     project.images.forEach(image => {
                         const img = document.createElement('img');
                         img.src = `../images/${image}`;

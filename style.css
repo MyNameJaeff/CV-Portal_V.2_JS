@@ -89,7 +89,7 @@ footer p {
     font-weight: 500;
     padding: 0.2vw .4vw;
     border-radius: 5px;
-    transition: all 0.3s ease;
+    transition: 0.3s ease background-color;
 }
 
 .navLink a:hover {
@@ -109,4 +109,34 @@ footer p {
 
 .easterEgg:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .navLinks {
+        width: 100%;
+    }
+
+    .navLink a {
+        font-size: 3vw;
+    }
+
+    .line1{
+        width: 25%;
+    }
+
+    .header {
+        min-height: 6vh;
+    }
+
+    .footer {
+        height: 6vh;
+    }
+
+    footer p {
+        font-size: 2.5vw;
+    }
+
+    .easterEgg {
+        width: 4%;
+    }
 }

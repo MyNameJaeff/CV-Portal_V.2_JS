@@ -1,6 +1,5 @@
-/* Override base styling for this page alone */
 html {
-    overflow: hidden; /* I had issues where the site was scrollable, temp/permanent fix */
+    overflow: hidden;
 }
 
 main {
@@ -11,32 +10,27 @@ main {
     overflow: hidden;
 }
 
-/* The page css here on out */
 main h1 {
-    font-size: 2vw;
-    margin: 1vh 0 1vh 0;
+    font-size: 2.5rem;
+    margin: 1vh 0;
 }
 
 main p {
-    font-size: 1.2vw;
+    font-size: 1.5rem;
 }
 
 .projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
     padding: 0;
     margin-top: 2vh;
-    width: 88%;
+    width: 85%;
     height: 75vh;
     overflow-y: scroll;
     overflow-x: hidden;
     border: .2vw solid #1D1B1B;
     border-radius: 1vw;
-}
-
-.card {
-    width: 50%;
 }
 
 .projects li {
@@ -55,7 +49,7 @@ main p {
     justify-content: space-around;
     align-items: center;
     color: #57dc74;
-    font-size: 1.2vw;
+    font-size: 1.5rem;
     font-weight: bold;
     width: 70%;
     height: 100%;
@@ -63,12 +57,12 @@ main p {
 }
 
 .projectText h3 {
-    font-size: 1.5vw;
+    font-size: 2rem;
     margin: 0;
 }
 
 .projectText p {
-    font-size: 1vw;
+    font-size: 1.2rem;
     margin: 0;
     text-decoration: underline;
 }
@@ -99,7 +93,6 @@ main p {
     object-position: center;
 }
 
-/* Modal */
 .button {
     color: #57dc74;
     cursor: pointer;
@@ -197,14 +190,14 @@ main p {
     position: relative;
     border-radius: 1vw;
     overflow: hidden;
-    flex-wrap: wrap; /* Enables wrapping for rows */
-    gap: 1vw; /* Adds spacing between items */
+    flex-wrap: wrap;
+    gap: 1vw;
 }
 
 .modalImages img {
     width: 100%;
-    flex: 1 1 calc(50% - 16px); /* Each image takes up 50% of the width minus gap */
-    box-sizing: border-box; /* Include padding and border in size calculations */
+    flex: 1 1 calc(50% - 16px);
+    box-sizing: border-box;
     object-fit: cover;
     border-radius: 0.5vw;
     filter: brightness(80%);
@@ -225,5 +218,64 @@ main p {
 
 .popup p {
     font-size: 1vw;
-    margin: 1vw 0 1vw 0;
+    margin: 1vw 0;
 }
+
+@media (max-width: 1200px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main p {
+        font-size: 1.2rem;
+    }
+
+    .projectText {
+        font-size: 1.2rem;
+    }
+
+    .projectText h3 {
+        font-size: 1.8rem;
+    }
+
+    .projectText p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 1.8rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
+    .projectText {
+        font-size: 1rem;
+    }
+
+    .projectText h3 {
+        font-size: 1.2rem;
+    }
+
+    .projectText p {
+        font-size: 0.9rem;
+    }
+
+}
+
+    @media (max-width: 1400px) {
+        .projects {
+            grid-template-columns: 1fr; /* 1 kolumn på små skärmar */
+            padding: 1vw;
+        }
+        .button {
+            padding: 1vw 2vw;
+            border-radius: 1.5vw;
+        }
+        .projects li {
+            gap: 2vw;
+        }
+    }
