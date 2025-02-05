@@ -8,7 +8,6 @@ html, body {
     font-family: "JetBrains Mono", serif;
     color: #ffffff;
     background-color: #353135;
-    background-image: url("");
     background-size: cover;
 }
 
@@ -102,13 +101,48 @@ footer p {
 }
 
 .easterEgg {
-    background-color: #0000003a;
-    width: 1.5%;
+    background-color: #1d1b1d;
+    width: 3vh;
+    height: 3vh;
     height: 100%;
 }
 
 .easterEgg:hover {
     cursor: pointer;
+}
+
+.skillsDiv {
+    height: 10vh;
+    padding: 1vh 0;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsDiv ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+    width: 80%;
+}
+
+.skillsDiv ul li {
+    width: 6%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsDiv ul li img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -137,6 +171,32 @@ footer p {
     }
 
     .easterEgg {
-        width: 4%;
+        width: 3vh;
+        height: 3vh;
+    }
+
+    .skillsDiv {
+        margin-top: 0vh;
+        height: 60vh;
+    }
+
+    .skillsDiv ul {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 100%;
+        gap: 15px;
+        width: 75%;
+    }
+
+    .skillsDiv ul li {
+        width: 25%;
+        margin: 5px 0;
+        height: 20%;
+    }
+
+    .skillsDiv ul li img {
+        width: 100%;
+        height: 100%;
     }
 }

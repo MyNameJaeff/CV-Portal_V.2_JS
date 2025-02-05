@@ -14,12 +14,11 @@ const createNavbar = () => {
         <div class="navbarLine line2"></div>
     `;
 
-    // Highlight the current page
-    const currentPage = window.location.pathname.split("/").pop(); // Get the current file name
+    const currentPage = window.location.pathname.split("/").pop();
     const links = navbar.querySelectorAll("a");
 
     for (const link of links) {
-        const linkHref = link.getAttribute("href").split("/").pop(); // Get only the file name
+        const linkHref = link.getAttribute("href").split("/").pop();
         if (currentPage === linkHref || (currentPage === "" && linkHref === "index.html")) {
             link.classList.add("active");
         }

@@ -1,4 +1,4 @@
-var isEasterEgg2active = false;
+let isEasterEgg2active = false;
 
 const easterEgg1 = () => {
     alert("Grattis, du är nu officiellt 1337! 🎉");

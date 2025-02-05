@@ -17,56 +17,69 @@ function showCard(cardType, element) {
         about: {
             active: `<h3>About Me</h3><div class="cardLine"></div>
             <p>
-            I am a 20-year-old student with ambitions to become a versatile full-stack developer. Rather than specializing in a single area, I believe that mastering multiple programming languages deepens one's overall understanding and adaptability.
+            I am a 20-year-old student with ambitions to become a versatile full-stack developer. My passion for technology fuels my continuous desire to expand my knowledge and skills in programming.
             <br><br>
-            My goal is to continuously improve my coding efficiency while maintaining high-quality standards, as both speed and quality are crucial in delivering exceptional products.
+            My interests are largely centered around computers, which is why I have developed a strong enthusiasm for coding. In my free time, I enjoy gaming, 3D printing, and creating websites for personal projects.
+            <br><br>
+            I have studied both JavaScript and C# .NET, as I believe that learning multiple programming languages offers a deeper understanding of software development. My goal is to become proficient in a wide range of technologies, enhancing my problem-solving abilities and adaptability as a developer.
             </p>`,
-            blurred: `<h3>Contact Me</h3>
+            blurred: `<h3>Skills</h3>
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis possimus ad accusamus explicabo sunt impedit, dolores voluptates aliquam quia quae! Necessitatibus, laboriosam eius saepe earum minima sunt odio doloremque eveniet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit maiores voluptates alias sequi illo iusto incidunt, ratione odit aperiam harum inventore soluta, ad esse, at nostrum nulla nemo aliquid veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consectetur aut eum doloribus. Delectus labore vel, soluta, ab totam, nulla incidunt molestias placeat earum amet rerum? Odio alias nobis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facilis minus sint quibusdam aut earum voluptas suscipit accusamus accusantium eligendi inventore quam dolorem rem sapiente excepturi, eveniet rerum. Voluptas, ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, et. Velit nemo quas enim, non vitae ullam dignissimos quae nam! Quae accusantium inventore nam modi porro temporibus illo vero et. 
+            I specialize in web technologies such as HTML, CSS, React, and Node.js. Additionally, I have experience with C# .NET and some Python, allowing me to take on diverse development challenges.            
+            <br><br>
+            Currently, I am enhancing my expertise by deepening my knowledge of C# and .NET to become a more versatile web developer.
+            <br><br>
+            I am proficient with version control systems like Git and use GitHub for collaboration. I have experience with SQL (MySQL) databases, which has helped me understand various approaches to structuring and querying data.
             </p>`
         },
         skills: {
             active: `<h3>Skills</h3><div class="cardLine"></div>
             <p>
-            I specialize in web technologies like HTML, CSS...
+            I specialize in web technologies such as HTML, CSS, React, and Node.js. Additionally, I have experience with C# .NET and some Python, allowing me to take on diverse development challenges.            
+            <br><br>
+            Currently, I am enhancing my expertise by deepening my knowledge of C# and .NET to become a more versatile web developer.
+            <br><br>
+            I am proficient with version control systems like Git and use GitHub for collaboration. I have experience with SQL (MySQL) databases, which has helped me understand various approaches to structuring and querying data.
             </p>`,
-            blurred: `<h3>Get in Touch</h3>
+            blurred: `<h3>Qualifications</h3>
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis possimus ad accusamus explicabo sunt impedit, dolores voluptates aliquam quia quae! Necessitatibus, laboriosam eius saepe earum minima sunt odio doloremque eveniet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit maiores voluptates alias sequi illo iusto incidunt, ratione odit aperiam harum inventore soluta, ad esse, at nostrum nulla nemo aliquid veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consectetur aut eum doloribus. Delectus labore vel, soluta, ab totam, nulla incidunt molestias placeat earum amet rerum? Odio alias nobis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facilis minus sint quibusdam aut earum voluptas suscipit accusamus accusantium eligendi inventore quam dolorem rem sapiente excepturi, eveniet rerum. Voluptas, ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, et. Velit nemo quas enim, non vitae ullam dignissimos quae nam! Quae accusantium inventore nam modi porro temporibus illo vero et. 
+            I hold two diplomas in information technology: one from high school and another from a post-high-school engineering program that focused on software development. This latter diploma provided me with a solid foundation in programming and web development, as well as practical experience with databases and version control systems, having been responsible for several projects.
+            <br><br>
+            Additionally, I hold two web development certifications from Certiport, one in HTML & CSS and the other in JavaScript. These certifications have given me the confidence to take on more advanced projects and further expand my skill set.
             </p>`
         },
         qualifications: {
             active: `<h3>Qualifications</h3><div class="cardLine"></div>
             <p>
-            I hold a degree in Computer Science...
+            I hold two diplomas in information technology: one from high school and another from a post-high-school engineering program that focused on software development. This latter diploma provided me with a solid foundation in programming and web development, as well as practical experience with databases and version control systems, having been responsible for several projects.
+            <br><br>
+            Additionally, I hold two web development certifications from Certiport, one in HTML & CSS and the other in JavaScript. These certifications have given me the confidence to take on more advanced projects and further expand my skill set.
             </p>`,
-            blurred: `<h3>Additional Info</h3>
+            blurred: `<h3>About Me</h3>
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis possimus ad accusamus explicabo sunt impedit, dolores voluptates aliquam quia quae! Necessitatibus, laboriosam eius saepe earum minima sunt odio doloremque eveniet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit maiores voluptates alias sequi illo iusto incidunt, ratione odit aperiam harum inventore soluta, ad esse, at nostrum nulla nemo aliquid veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consectetur aut eum doloribus. Delectus labore vel, soluta, ab totam, nulla incidunt molestias placeat earum amet rerum? Odio alias nobis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facilis minus sint quibusdam aut earum voluptas suscipit accusamus accusantium eligendi inventore quam dolorem rem sapiente excepturi, eveniet rerum. Voluptas, ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, et. Velit nemo quas enim, non vitae ullam dignissimos quae nam! Quae accusantium inventore nam modi porro temporibus illo vero et. 
+            I am a 20-year-old student with ambitions to become a versatile full-stack developer. My passion for technology fuels my continuous desire to expand my knowledge and skills in programming.
+            <br><br>
+            My interests are largely centered around computers, which is why I have developed a strong enthusiasm for coding. In my free time, I enjoy gaming, 3D printing, and creating websites for personal projects.
+            <br><br>
+            I have studied both JavaScript and C# .NET, as I believe that learning multiple programming languages offers a deeper understanding of software development. My goal is to become proficient in a wide range of technologies, enhancing my problem-solving abilities and adaptability as a developer.
             </p>`
         }
     };
 
-    // Update active card content dynamically
+
     activeCard.innerHTML = content[cardType].active;
 
-    // Select all blurred cards (if they have a common class name 'blurredCard')
     const blurredCards = document.querySelectorAll('.blurredCard');
 
-    // Loop through blurred cards and update their content
     for (const blurredCard of blurredCards) {
         blurredCard.innerHTML = content[cardType].blurred;
 
-        // Get the index of the current cardType
         const currentIndex = cardTypes.indexOf(cardType);
-        const nextIndex = (currentIndex + 1) % cardTypes.length; // Loop back to the first card if necessary
+        const nextIndex = (currentIndex + 1) % cardTypes.length;
 
-        // Set the onclick of each blurred card to navigate to the next card
         blurredCard.onclick = () => showCard(cardTypes[nextIndex], blurredCard);
     }
 
-    // Remove active class from all buttons and then add to the selected button
     const buttons = document.querySelectorAll('.cardButtons button');
     for (const btn of buttons) {
         btn.classList.remove('activeButton');

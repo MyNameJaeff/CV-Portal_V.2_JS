@@ -61,24 +61,23 @@ const createPortfolioCards = () => {
 
                     // Add all images to the modal
                     const modalImagesContainer = card.querySelector('.modalImages');
-                    // biome-ignore lint/complexity/noForEach: <explanation>
-                    project.images.forEach(image => {
+                    for (const image of project.images) {
                         const img = document.createElement('img');
                         img.src = `../images/${image}`;
-                        img.alt = project.name;
-                        img.classList.add('modalImage'); // Optional: Add a class for styling
+                        img.alt = image;
+                        img.classList.add('modalImage');
                         modalImagesContainer.appendChild(img);
-                    });
+                    }
 
                     // Push the card element into the projectsElements array
                     projectsElements.push(card);
                 }
 
-                resolve(projectsElements); // Resolve with created elements
+                resolve(projectsElements);
             })
             .catch(error => {
                 console.error('Error fetching or processing portfolio data:', error);
-                reject(error); // Reject the promise
+                reject(error);
             });
     });
 };

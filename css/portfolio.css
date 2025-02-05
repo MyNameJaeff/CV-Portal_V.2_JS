@@ -1,5 +1,5 @@
-html {
-    overflow: hidden;
+body{
+    height: 110vh;
 }
 
 main {
@@ -8,6 +8,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
+    height: 97vh;
 }
 
 main h1 {
@@ -22,15 +23,15 @@ main p {
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
     padding: 0;
     margin-top: 2vh;
     width: 85%;
-    height: 75vh;
+    height: 80vh;
     overflow-y: scroll;
     overflow-x: hidden;
     border: .2vw solid #1D1B1B;
     border-radius: 1vw;
+    background-color: #443f44;
 }
 
 .projects li {
@@ -41,6 +42,16 @@ main p {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.modalImages .card:last-child:nth-child(odd) {
+    grid-column: span 2;
+}
+
+
+.projects .card:nth-child(4n + 1),
+.projects .card:nth-child(4n + 4) {
+    background-color: #272427;
 }
 
 .projectText {
@@ -119,9 +130,9 @@ main p {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.5);
-    transition: opacity 200ms;
     visibility: hidden;
     opacity: 0;
+    height: 110%;
 }
 
 .overlay.light {
@@ -140,6 +151,11 @@ main p {
     opacity: 1;
 }
 
+/* body:has(.overlay:target) {
+    height: 100vh;
+    overflow: hidden;
+} */
+
 .popup {
     display: flex;
     flex-direction: column;
@@ -149,7 +165,7 @@ main p {
     background-color: #353131;
     border: 1px solid #666;
     width: 80vw;
-    height: 80vh;
+    height: 90vh;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     position: relative;
 }
@@ -162,11 +178,11 @@ main p {
 .popup .close {
     position: absolute;
     top: .1vh;
-    right: .1vh;
+    right: 5vh;
     width: 3%;
     opacity: 0.8;
     transition: all 200ms;
-    font-size: 2vw;
+    font-size: 7vh;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
@@ -178,25 +194,19 @@ main p {
 }
 
 .popup .content {
-    max-height: 70vh;
+    max-height: 82vh;
     overflow: scroll;
 }
 
 .modalImages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    border-radius: 1vw;
-    overflow: hidden;
-    flex-wrap: wrap;
-    gap: 1vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 16px;
 }
 
 .modalImages img {
     width: 100%;
-    flex: 1 1 calc(50% - 16px);
+    height: auto;
     box-sizing: border-box;
     object-fit: cover;
     border-radius: 0.5vw;
@@ -204,12 +214,19 @@ main p {
     object-position: center;
 }
 
+/* If there's an odd number of images, make the last one span two columns */
+.modalImages img:last-child:nth-child(odd) {
+    grid-column: span 2;
+}
+
 .popup a {
     text-decoration: underline;
     color: #57dc74;
-    font-size: 2vw;
     text-align: center;
     margin: 0;
+    font-size: 4vh;
+    width: fit-content;
+    align-self: center;
 }
 
 .popup a:hover {
@@ -217,7 +234,7 @@ main p {
 }
 
 .popup p {
-    font-size: 1vw;
+    font-size: 2.5vh;
     margin: 1vw 0;
 }
 
@@ -244,12 +261,20 @@ main p {
 }
 
 @media (max-width: 768px) {
+    body{
+        height: 100vh;
+    }
     main h1 {
         font-size: 1.8rem;
     }
 
     main p {
         font-size: 1rem;
+    }
+
+    .projects {
+        height: 70vh;
+        width: 95%;
     }
 
     .projectText {
@@ -268,14 +293,43 @@ main p {
 
     @media (max-width: 1400px) {
         .projects {
-            grid-template-columns: 1fr; /* 1 kolumn på små skärmar */
-            padding: 1vw;
+            grid-template-columns: 1fr;
+            border: 2px solid #4d4d4d;
         }
+
+        .projects .card:nth-child(odd) li{
+            background-color: #272427;
+        }
+
+        .projects .card:nth-child(even) li{
+            background-color: #443f44;
+        }
+
         .button {
             padding: 1vw 2vw;
             border-radius: 1.5vw;
         }
-        .projects li {
-            gap: 2vw;
+
+        .overlay {
+            height: 100%;
+        }
+
+        .popup {
+            width: 80vw;
+            height: 80vh;
+        }
+
+        .popup a{
+            width: 100%;
+            font-size: 2.5vh;
+        }
+
+        .popup p {
+            font-size: 2vh;
+        }
+
+        .popup .close {
+            font-size: 5vh;
+            right: 3vh;
         }
     }
