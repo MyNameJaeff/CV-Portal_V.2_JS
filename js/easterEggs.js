@@ -5,7 +5,7 @@ const easterEgg1 = () => {
 };
 
 document.addEventListener('keydown', (event) => {
-    const key = event.key.toLowerCase(); 
+    const key = event.key.toLowerCase();
     handleSequence(key);
 });
 
@@ -37,3 +37,10 @@ const easterEgg2 = () => {
         document.body.style.backgroundImage = "url('https://static.vecteezy.com/system/resources/previews/041/879/642/non_2x/ai-generated-colorful-easter-eggs-nestled-in-alpine-meadow-with-majestic-mountain-landscape-springtime-celebration-and-holiday-traditions-amidst-breathtaking-natural-scenery-photo.jpg')";
     }
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+    const easterEgg = document.getElementById("easterEgg");
+    easterEgg.addEventListener("click", () => {
+        easterEgg2();
+    });
+});
