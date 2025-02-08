@@ -1,4 +1,6 @@
-const createNavbar = () => {
+/* This did not work as i wanted it to due to github pages shenanigans, so i retired this for a simple copy-paste nav instead */
+
+/* const createNavbar = () => {
     const navbar = document.createElement("nav");
     navbar.classList.add("navbar");
 
@@ -25,4 +27,4 @@ const createNavbar = () => {
     }
 
     return navbar;
-};
+}; */
