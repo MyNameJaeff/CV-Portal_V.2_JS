@@ -26,7 +26,7 @@ main{
     margin: 1vw;
     border: .2vw solid black;
     border-radius: 1vw;
-    background-color: #F0F0F0;
+    background-color: #f6eee3;
 }
 
 .activeCard{
@@ -43,7 +43,7 @@ main{
     padding: 0 1vw;
     font-size: 1vw;
     margin-left: 1%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .cardLine{
@@ -80,6 +80,18 @@ main{
     height: 20vh;
 }
 
+.cardButtons div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cardButtons div p{
+    font-size: 1.1vw;
+    margin: 0;
+    margin-left: 1vw;
+}
+
 .cardButtons button{
     width: 2vw;
     height: 2vw;
@@ -99,6 +111,13 @@ main{
 .cardButtons .activeButton{
     background-color: #57dc74;
     color: black;
+    text-decoration: underline;
+}
+
+.activeButtonText{
+    font-size: 1.1vw;
+    margin: 0;
+    margin-left: 1vw;
     text-decoration: underline;
 }
 
@@ -141,7 +160,7 @@ main{
 
     .cardButtons{
         margin-top: 5vh;
-        width: 75%;
+        width: 85%;
         position: inherit;
         display: flex;
         flex-direction: row;
@@ -153,6 +172,18 @@ main{
         height: 10vw;
         font-size: 5vw;
         border-radius: 5vw;
+    }    
+
+    .cardButtons div{
+        height: 20vw;
+        width: 33%;
+        flex-direction: column;
     }
-    
+
+    .cardButtons div p{
+        font-size: 5vw;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
 }

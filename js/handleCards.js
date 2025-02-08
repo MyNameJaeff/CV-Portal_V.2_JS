@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-const cardTypes = ['about', 'skills', 'qualifications'];
+const cardTypes = ['about', 'skills', 'credentials'];
 
-function showCard(cardType, element) {
+function showCard(cardType) {
     const activeCard = document.getElementById("activeCard");
 
     const content = {
@@ -41,15 +41,15 @@ function showCard(cardType, element) {
             <br><br>
             I am proficient with version control systems like Git and use GitHub for collaboration. I have experience with SQL (MySQL) databases, which has helped me understand various approaches to structuring and querying data.
             </p>`,
-            blurred: `<h3>Qualifications</h3>
+            blurred: `<h3>Credentials</h3>
             <p>
             I hold two diplomas in information technology: one from high school and another from a post-high-school engineering program that focused on software development. This latter diploma provided me with a solid foundation in programming and web development, as well as practical experience with databases and version control systems, having been responsible for several projects.
             <br><br>
             Additionally, I hold two web development certifications from Certiport, one in HTML & CSS and the other in JavaScript. These certifications have given me the confidence to take on more advanced projects and further expand my skill set.
             </p>`
         },
-        qualifications: {
-            active: `<h3>Qualifications</h3><div class="cardLine"></div>
+        credentials: {
+            active: `<h3>Credentials</h3><div class="cardLine"></div>
             <p>
             I hold two diplomas in information technology: one from high school and another from a post-high-school engineering program that focused on software development. This latter diploma provided me with a solid foundation in programming and web development, as well as practical experience with databases and version control systems, having been responsible for several projects.
             <br><br>
@@ -66,7 +66,6 @@ function showCard(cardType, element) {
         }
     };
 
-
     activeCard.innerHTML = content[cardType].active;
 
     const blurredCards = document.querySelectorAll('.blurredCard');
@@ -77,20 +76,21 @@ function showCard(cardType, element) {
         const currentIndex = cardTypes.indexOf(cardType);
         const nextIndex = (currentIndex + 1) % cardTypes.length;
 
-        blurredCard.onclick = () => showCard(cardTypes[nextIndex], blurredCard);
+        blurredCard.onclick = () => showCard(cardTypes[nextIndex]);
     }
 
-    const buttons = document.querySelectorAll('.cardButtons button');
-    for (const btn of buttons) {
+    // Ta bort 'activeButton' och 'activeButtonText' från alla knappar och texter
+    for (const btn of document.querySelectorAll('.cardButtons button')) {
         btn.classList.remove('activeButton');
     }
-
-    if (element.tagName === 'BUTTON') {
-        element.classList.add('activeButton');
-    } else {
-        const activeButton = document.querySelector(`#${cardType}Button`);
-        if (activeButton) {
-            activeButton.classList.add('activeButton');
-        }
+    for (const text of document.querySelectorAll('.cardButtons p')) {
+        text.classList.remove('activeButtonText');
     }
+
+    // Hitta rätt knapp och text att aktivera
+    const activeButton = document.getElementById(`${cardType}Button`);
+    const activeText = document.getElementById(`${cardType}Text`);
+
+    if (activeButton) activeButton.classList.add('activeButton');
+    if (activeText) activeText.classList.add('activeButtonText');
 }

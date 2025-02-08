@@ -14,7 +14,7 @@ main {
 }
 
 section {
-    background-color: #ffffffe8; /* Softer white */
+    background-color: #f6eee3; /* Softer white */
     padding: 2vw;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -60,6 +60,24 @@ ul li strong {
     font-weight: bold;
 }
 
+.printButton
+{
+    width: 5vw;
+    height: 2vw;
+    align-self: center;
+    margin-bottom: 5vh;
+
+    background-color: #57dc74;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    &:hover {
+        background-color: #44a859;
+        border: #333 1px solid;
+    }
+}
 
 
 @media (max-width: 768px) {
@@ -94,5 +112,27 @@ ul li strong {
     section{
         margin-bottom: 5vw;
         padding: 5vw;
+    }
+
+    .printButton {
+        width: 25%;
+        height: 5vh;
+        font-size: 1.5rem;
+    }
+}
+
+
+/* On print */
+@media print {
+    .navbar {
+        display: none;
+    }
+
+    .skills{
+        margin-top: 6vh;
+    }
+
+    .printButton {
+        display: none;
     }
 }
