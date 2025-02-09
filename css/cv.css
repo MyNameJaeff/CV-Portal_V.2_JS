@@ -135,4 +135,12 @@ ul li strong {
     .printButton {
         display: none;
     }
+
+    .education{
+        margin-top: 16vh;
+    }
+    
+    br{
+        margin-bottom: 3vh;
+    }
 }
