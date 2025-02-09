@@ -195,7 +195,7 @@ main p {
 
 .popup .content {
     max-height: 82vh;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .modalImages {
